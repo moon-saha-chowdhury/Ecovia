@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
-  --background: #ffffff;
+  --background: #fbfbfb;
   --foreground: #171717;
 }
 
@@ -23,4 +24,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.ev-container {
+  width: 100%;
+  max-width: 1470px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+.footer-img img {
+  filter: invert(1) brightness(2) contrast(1);
+}
+@media (min-width: 1850px) {
+  .ev-container {
+    max-width: 1920px;
+    padding-inline: 200px;
+  }
+}
+@media (min-width: 1500px) {
+  .ev-container {
+    max-width: 1600px;
+    padding-inline: 80px;
+  }
 }
