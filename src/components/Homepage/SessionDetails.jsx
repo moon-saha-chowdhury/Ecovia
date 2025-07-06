@@ -2,7 +2,7 @@ import React from "react";
 
 const SessionDetails = () => {
   return (
-    <div className="lg:pt-[80px] pt-[65px] lg:pb-[130px] pb-[100px]">
+    <div className="lg:pt-[80px] pt-[65px] lg:pb-[130px] pb-[100px] bg-white">
       <div className="ev-container">
         {/* Header */}
         <div className="flex flex-col justify-center items-center xl:mb-[48px] mb-[35px]">
