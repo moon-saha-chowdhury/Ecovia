@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="py-[16px] shadow-sm">
           <div className="ev-container">
             <div className=" w-full flex justify-between items-center ">
-              <Link className="w-full max-w-[180px]" href="/">
+              <Link className="w-full md:max-w-[180px] max-w-[120px]" href="/">
                 <img
                   alt="logo"
                   src="/assets/images/logo.png"
@@ -17,7 +17,7 @@ const Navbar = () => {
                   className="object-cover object-center"
                 />
               </Link>
-              <button className="px-[15px] py-[10px] border-0 shadow-none btn btn-primary bg-[#22603f] rounded-[4px] text-[#fbfbfb] text-[16px] font-medium">
+              <button className="px-[15px] py-[10px] border-0 shadow-none btn btn-primary bg-[#22603f] rounded-[4px] text-[#fbfbfb] md:text-[16px] text-[14px] font-medium">
                 Start a session
               </button>
             </div>
