@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 const AboutSection = () => {
   return (
     <section
-      className="w-full  py-[55px] md:py-[80px] lg:py-[100px] bg-white"
+      className="w-full  py-[55px] md:py-[80px] lg:py-[100px] bg-[#fbfbfb]"
       id="about"
     >
       <div className="ev-container">

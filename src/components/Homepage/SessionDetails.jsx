@@ -2,7 +2,7 @@ import React from "react";
 
 const SessionDetails = () => {
   return (
-    <div className="lg:pt-[80px] pt-[65px] lg:pb-[130px] pb-[100px]">
+    <div className="lg:pt-[80px] pt-[65px] lg:pb-[130px] pb-[100px] bg-[#fbfbfb]">
       <div className="ev-container">
         {/* Header */}
         <div className="flex flex-col justify-center items-center xl:mb-[48px] mb-[35px]">
@@ -15,7 +15,7 @@ const SessionDetails = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[26px]">
           {pricingData?.map((data) => (
             <div
               key={data.id}
@@ -31,8 +31,12 @@ const SessionDetails = () => {
 
                 {/* Title & Price */}
                 <div className="flex justify-between items-center">
-                  <h2 className="text-xl font-bold">{data.title}</h2>
-                  <span className="text-lg">${data.price}/mo</span>
+                  <h2 className="text-xl text-gray-800 font-bold">
+                    {data.title}
+                  </h2>
+                  <span className="text-gray-800 text-lg">
+                    ${data.price}/mo
+                  </span>
                 </div>
 
                 {/* Features */}
@@ -53,7 +57,7 @@ const SessionDetails = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      <span>{item}</span>
+                      <span className="tex-[16px] text-gray-800">{item}</span>
                     </li>
                   ))}
                 </ul>

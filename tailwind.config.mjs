@@ -1,3 +1,6 @@
+// tailwind.config.mjs
+import daisyui from "daisyui";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -8,6 +11,13 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "max-xs": { max: "575px" },
+        "max-sm": { max: "767px" },
+        "max-md": { max: "991px" },
+        "max-lg": { max: "1200px" },
+        "max-xl": { max: "1600px" },
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -50,21 +60,6 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
-      "max-xs": {
-        max: "575px",
-      },
-      "max-sm": {
-        max: "767px",
-      },
-      "max-md": {
-        max: "991px",
-      },
-      "max-lg": {
-        max: "1200px",
-      },
-      "max-xl": {
-        max: "1600px",
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -72,5 +67,9 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
+  daisyui: {
+    themes: ["light"], // force light theme only
+    darkTheme: "dark", // fallback
+  },
 };

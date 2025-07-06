@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="pb-[55px] md:pb-[68px] lg:pb-[80px] pt-[60px] bg-white">
+    <section className="pb-[55px] md:pb-[68px] lg:pb-[80px] pt-[60px] bg-[#fbfbfb]">
       <div className="ev-container">
         <div className="lg:py-[125px] pt-[60px] w-full  mx-auto flex flex-col  md:gap-[25px] gap-[15px] relative z-10">
           <div className="absolute inset-0 bg-[url('/assets/images/heroBg.png')] bg-contain bg-center bg-no-repeat z-[-2] opacity-12" />
