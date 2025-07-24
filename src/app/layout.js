@@ -9,9 +9,32 @@ const interTight = Inter_Tight({
 });
 
 export const metadata = {
-  title: "Ecovia",
+  title: "Ecovia | Empowering industries with sustainable manufacturing",
   description:
-    "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
+    "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy.",
+  openGraph: {
+    title: "Ecovia | Empowering industries with sustainable manufacturing",
+    description:
+      "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy.",
+    url: "https://ecovia-five.vercel.app",
+    siteName: "Ecovia",
+    type: "website",
+    images: [
+      {
+        url: "https://ecovia-five.vercel.app/assets/Ecovia.png",
+        width: 1200,
+        height: 630,
+        alt: "Ecovia Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecovia | Empowering industries with sustainable manufacturing",
+    description:
+      "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy.",
+    images: ["https://ecovia-five.vercel.app/assets/Ecovia.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
