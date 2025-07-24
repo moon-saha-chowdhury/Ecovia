@@ -11,7 +11,7 @@ const interTight = Inter_Tight({
 export const metadata = {
   title: "Ecovia",
   description:
-    "Ecovia is a sustainability-focused agency offering expert services in industry sustainability, LEED certification, and environmental consulting. Partner with us to build a greener future.",
+    "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
 };
 
 export default function RootLayout({ children }) {
