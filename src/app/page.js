@@ -2,7 +2,7 @@ import HeroSectionTab from "@/components/Homepage/HeroSectionTab";
 
 //  Metadata function
 export async function generateMetadata() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const baseUrl = "https://ecovia-five.vercel.app/" || "http://localhost:3000";
   const title = "Ecovia | Empowering industries with sustainable manufacturing";
   const description =
     "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.";
