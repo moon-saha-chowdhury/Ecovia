@@ -10,11 +10,11 @@ const HeroSection = () => {
           <h1 className="[leading-trim:both] [text-edge:cap] 2xl:text-[60px] leading-none tracking-normal  xl:text-[54px] lg:text-[44px] md:text-[36px] text-[32px] text-center font-semibold text-[#143d3c]">
             Empowering industries with sustainable manufacturing
           </h1>
-          <p className="text-[16px] text-[#5c5c5c] mx-auto max-w-[669px] tracking-normal  leading-[1.6] text-center">
+          {/* <p className="text-[16px] text-[#5c5c5c] mx-auto max-w-[669px] tracking-normal  leading-[1.6] text-center">
             Ecovia is your trusted partner in sustainability. We specialize in
             LEED certification, industrial sustainability planning, and
             eco-friendly solutions that make a measurable impact
-          </p>
+          </p> */}
           <div className="btn-container flex gap-[15px] items-center justify-center">
             <Link href={"/"}>
               <button className="p-[7px] lg:p-[15px] bg-[#8acbcf] rounded-[25px] grid grid-cols-[auto_5px] items-center gap-[5px] cursor-pointer">

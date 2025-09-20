@@ -66,6 +66,13 @@ const AboutSection = () => {
           </div>
 
           {/* Membership */}
+          <div className="mt-4 text-left w-full">
+            <h3 className="font-semibold text-gray-900 mb-1">MEMBER</h3>
+            <ul className="text-sm text-gray-700 space-y-1">
+              <li>NDC Alumni</li>
+              <li>SUST Alumni</li>
+            </ul>
+          </div>
         </div>
 
         {/* Right Content */}

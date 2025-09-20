@@ -1,23 +1,82 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const TabHome = () => {
   return (
     <div
-      className="min-h-[calc(80vh-80px)]
- lg:py-[25px] w-full mx-auto flex flex-col  md:gap-[25px] gap-[15px] relative z-10"
+      className="
+ lg:py-[20px] w-full mx-auto flex flex-col  md:gap-[25px] gap-[15px] relative z-10"
     >
-      <div className="absolute inset-0 bg-[url('/assets/images/heroBg.png')] bg-contain  bg-[position:center_100px] bg-no-repeat z-[-2] md:opacity-30 opacity-12" />
-      <h1 className="[leading-trim:both] [text-edge:cap] 2xl:text-[60px] leading-none tracking-normal  xl:text-[54px] lg:text-[44px] md:text-[36px] text-[32px] text-center font-semibold text-[#143d3c] pt-[100px]">
+      <div className="w-full" />
+      <h1 className="[leading-trim:both] [text-edge:cap] 2xl:text-[32px] leading-none tracking-normal  xl:text-[28px]  text-[26px] text-center font-semibold text-[#143d3c] pb-[28px]">
         Empowering industries with sustainable manufacturing
       </h1>
-      <p className="text-[16px] text-[#5c5c5c] mx-auto max-w-[669px] tracking-normal  leading-[1.6] text-center">
-        Ecovia is your trusted partner in sustainability. We specialize in LEED
-        certification, industrial sustainability planning, and eco-friendly
-        solutions that make a measurable impact
-      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col group p-2 bg-white rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:bg-[#eceef1] transition-background"
+          >
+            {/* Image */}
+            <div className="w-full h-56 relative">
+              <Image
+                src={article.image}
+                alt={article.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="p-4 flex flex-col flex-grow">
+              {/* <span className="text-sm text-gray-600">{article.author}</span> */}
+              <h3 className="mt-1 text-lg font-semibold text-gray-900 group-hover:text-[#143d3c] transition-colors">
+                {article.title}
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default TabHome;
+const articles = [
+  {
+    author: "Mary Summers Rogers",
+    title:
+      "Industrial Facility Design for Garment, Dyeing, Washing, Knitting, Spinning Unit Project Master plan, Architectural, Electrical, Plumbing, HVAC, 3D Visualization",
+    image: "/assets/images/IndustrialFacilityDesign.jpg",
+  },
+  {
+    author: "Aaron Hope",
+    title:
+      "LEED Certification for New Building (BD+C) and Existing Building (EB O+M) Feasibility, Energy Model, Energy Audit, Commissioning, Certification",
+    image: "/assets/images/LEEDCertification.jpg",
+  },
+  {
+    author: "Jacqueline Maley",
+    title:
+      "Green Finance, Green Transformation Fund, Sustainable Finance Low-cost refinance from Bangladesh bank, JICA & etc",
+    image: "/assets/images/GreenFinance.jpg",
+  },
+  {
+    author: "Heather Benjamin",
+    title:
+      "Higg V4 FEM & FSLM & BRM for Apparel Industry , Higg v4 FEM (Level 1, 2, 3) & FSLM Assessment File Preparation",
+    image: "/assets/images/HiggIndex.jpg",
+  },
+  {
+    author: "Gracie Tilman",
+    title:
+      "Green Building Design Training for Architects & Engineers Unlock Sustainability. Shape the Future.",
+    image: "/assets/images/training2.jpg",
+  },
+  {
+    author: "Heather Benjamin",
+    title:
+      "Higg V4 FEM (Level 1,2,3) & FSLM Training for Garment Industry Professionals Elevate your professional skill with Higg FEM v4 Training",
+    image: "/assets/images/training1.jpg",
+  },
+];

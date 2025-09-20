@@ -5,10 +5,17 @@ import AboutSection from "./AboutSection";
 import ConsultancySection from "./ConsultancySection";
 import TrainingSection from "./TrainningSection";
 import ContactTab from "./ContactTab";
+import { useTabs } from "@/context/tab-context";
 
 const HeroSectionTab = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const tabs = ["Home", "About", "Consultancy", "Training", "Book a Session"];
+  const { activeTab, setActiveTab } = useTabs();
+  const tabs = [
+    "Home",
+    "About",
+    "Consultancy",
+    "Training",
+    "Request Information",
+  ];
 
   return (
     <section className="min-h-screen pb-[55px] md:pb-[68px] lg:pb-[80px] pt-[140px] bg-[#fbfbfb]">

@@ -1,6 +1,7 @@
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import { TabProvider } from "@/context/tab-context";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body className={interTight?.className}>
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <TabProvider>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </TabProvider>
       </body>
     </html>
   );
