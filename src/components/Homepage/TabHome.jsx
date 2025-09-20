@@ -1,8 +1,11 @@
+"use client";
+import { useTabs } from "@/context/tab-context";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const TabHome = () => {
+  const { setActiveTab } = useTabs();
+
   return (
     <div
       className="
@@ -14,9 +17,10 @@ const TabHome = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article, idx) => (
-          <div
+          <button
             key={idx}
-            className="flex flex-col group p-2 bg-white rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:bg-[#eceef1] transition-background"
+            onClick={() => setActiveTab(article.goTo)}
+            className="flex flex-col group p-2 bg-white rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:bg-[#eceef1] transition-background items-start text-left"
           >
             {/* Image */}
             <div className="w-full h-56 relative">
@@ -34,7 +38,7 @@ const TabHome = () => {
                 {article.title}
               </h3>
             </div>
-          </div>
+          </button>
         ))}
       </div>
     </div>
@@ -48,35 +52,41 @@ const articles = [
     title:
       "Industrial Facility Design for Garment, Dyeing, Washing, Knitting, Spinning Unit Project Master plan, Architectural, Electrical, Plumbing, HVAC, 3D Visualization",
     image: "/assets/images/IndustrialFacilityDesign.jpg",
+    goTo: 2,
   },
   {
     author: "Aaron Hope",
     title:
       "LEED Certification for New Building (BD+C) and Existing Building (EB O+M) Feasibility, Energy Model, Energy Audit, Commissioning, Certification",
     image: "/assets/images/LEEDCertification.jpg",
+    goTo: 2,
   },
   {
     author: "Jacqueline Maley",
     title:
       "Green Finance, Green Transformation Fund, Sustainable Finance Low-cost refinance from Bangladesh bank, JICA & etc",
     image: "/assets/images/GreenFinance.jpg",
+    goTo: 2,
   },
   {
     author: "Heather Benjamin",
     title:
       "Higg V4 FEM & FSLM & BRM for Apparel Industry , Higg v4 FEM (Level 1, 2, 3) & FSLM Assessment File Preparation",
     image: "/assets/images/HiggIndex.jpg",
+    goTo: 2,
   },
   {
     author: "Gracie Tilman",
     title:
       "Green Building Design Training for Architects & Engineers Unlock Sustainability. Shape the Future.",
     image: "/assets/images/training2.jpg",
+    goTo: 3,
   },
   {
     author: "Heather Benjamin",
     title:
       "Higg V4 FEM (Level 1,2,3) & FSLM Training for Garment Industry Professionals Elevate your professional skill with Higg FEM v4 Training",
     image: "/assets/images/training1.jpg",
+    goTo: 3,
   },
 ];
