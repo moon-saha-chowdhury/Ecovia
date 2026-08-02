@@ -10,7 +10,7 @@ export async function generateMetadata() {
       title: "WeCons | Empowering industries with sustainable manufacturing",
       description:
         "WeCons is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
-      images: "https://ecovia-five.vercel.app/assets/wecons.png",
+      images: "https://ecovia-five.vercel.app/assets/weCons.png",
       url: "https://ecovia-five.vercel.app",
       type: "website",
     },
@@ -19,7 +19,7 @@ export async function generateMetadata() {
       title: "WeCons | Empowering industries with sustainable manufacturing",
       description:
         "WeCons is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
-      images: "https://ecovia-five.vercel.app/assets/wecons.png",
+      images: "https://ecovia-five.vercel.app/assets/weCons.png",
     },
   };
 }
