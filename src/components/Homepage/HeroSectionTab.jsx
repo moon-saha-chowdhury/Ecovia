@@ -23,7 +23,7 @@ const HeroSectionTab = () => {
         {/* Tabs Wrapper */}
         <div className="md:flex w-full gap-[20px]">
           {/* Tabs Navigation */}
-          <div className="w-full md:max-w-[300px]">
+          <div className="w-full md:max-w-[260px]">
             <div className="md:sticky md:top-[120px] text-center">
               <div className="flex md:flex-col flex-nowrap overflow-x-auto no-scrollbar px-2 md:px-0 md:overflow-visible tabs tabs-bordered gap-x-2 md:justify-normal justify-between">
                 {tabs.map((label, index) => (
@@ -44,7 +44,7 @@ const HeroSectionTab = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="w-full md:w-3/4 p-[20px] md:p-[30px] h-full border border-base-300 bg-base-100 rounded-md md:rounded-r-md mt-4 md:mt-0">
+          <div className="w-full  p-[20px] md:p-[30px] h-full border border-base-300 bg-base-100 rounded-md md:rounded-r-md mt-4 md:mt-0">
             {activeTab === 0 && <TabHome />}
             {activeTab === 1 && <AboutSection />}
             {activeTab === 2 && <ConsultancySection />}

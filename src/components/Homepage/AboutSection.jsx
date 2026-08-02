@@ -1,5 +1,4 @@
-import React from "react";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -24,7 +23,7 @@ const AboutSection = () => {
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-800">
               <FaEnvelope className="text-primary" />
-              <span>dyp.dha@gmail.com (Email)</span>
+              <span>d4i.dipankar@gmail.com (Email)</span>
             </div>
           </div>
 
