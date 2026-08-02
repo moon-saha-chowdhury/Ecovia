@@ -19,11 +19,11 @@ const AboutSection = () => {
           <div className="text-left w-full space-y-2 mt-4">
             <h3 className="font-semibold text-gray-900">CONTACT</h3>
             <div className="flex items-center gap-2 text-sm text-gray-800">
-              <FaPhone className="text-green-800" />
+              <FaPhone className="text-primary" />
               <span>+88017 2323 0077 (Mobile)</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-800">
-              <FaEnvelope className="text-green-800" />
+              <FaEnvelope className="text-primary" />
               <span>dyp.dha@gmail.com (Email)</span>
             </div>
           </div>
@@ -120,30 +120,38 @@ const AboutSection = () => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-4">
-            <div className="flex flex-col items-start">
-              <div className="text-green-800 lg:text-[28px] text-[22px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div className="flex flex-col items-center">
+              <div className="text-primary lg:text-[28px] text-[22px] font-bold">
                 15+
               </div>
-              <p className="text-sm text-gray-600">Years of Experience</p>
+              <p className="text-xs text-gray-600 font-medium">
+                Years of Experience
+              </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="text-green-800 lg:text-[28px] text-[22px] font-bold">
+            <div className="flex flex-col items-center">
+              <div className="text-primary lg:text-[28px] text-[22px] font-bold">
                 20+
               </div>
-              <p className="text-sm text-gray-600">Green Building Projects</p>
+              <p className="text-xs text-gray-600 font-medium">
+                Green Building Projects
+              </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="text-green-800 lg:text-[28px] text-[22px] font-bold">
+            <div className="flex flex-col items-center">
+              <div className="text-primary lg:text-[28px] text-[22px] font-bold">
                 7
               </div>
-              <p className="text-sm text-gray-600">Platinum Certifications</p>
+              <p className="text-xs text-gray-600 font-medium">
+                Platinum Certifications
+              </p>
             </div>
-            <div className="flex flex-col items-start">
-              <div className="text-green-800 lg:text-[28px] text-[22px] font-bold">
+            <div className="flex flex-col items-center">
+              <div className="text-primary lg:text-[28px] text-[22px] font-bold ">
                 5
               </div>
-              <p className="text-sm text-gray-600">Gold Certifications</p>
+              <p className="text-xs text-gray-600 font-medium">
+                Gold Certifications
+              </p>
             </div>
           </div>
         </div>

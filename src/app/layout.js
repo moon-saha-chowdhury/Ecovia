@@ -10,9 +10,24 @@ const interTight = Inter_Tight({
 });
 
 export const metadata = {
-  title: "Ecovia",
+  title: "WeCons",
   description:
-    "Ecovia is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
+    "WeCons is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
+  openGraph: {
+    title: "WeCons | Empowering industries with sustainable manufacturing",
+    description:
+      "WeCons is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
+    image: "https://WeCons-five.vercel.app/assets/weCons.png",
+    url: "https://WeCons-five.vercel.app",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WeCons | Empowering industries with sustainable manufacturing",
+    description:
+      "WeCons is a sustainability-driven consultancy offering expert guidance on LEED certification, industry compliance, and environmental strategy — empowering businesses to build a greener future.",
+    image: "https://WeCons-five.vercel.app/assets/weCons.png",
+  },
 };
 
 export default function RootLayout({ children }) {

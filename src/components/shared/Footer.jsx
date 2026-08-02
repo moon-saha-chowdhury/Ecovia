@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="ev-container bg-[#fbfbfb]">
-      <div className="w-full flex flex-col justify-center items-center py-[25px] bg-[#12383d] mb-2 rounded-[24px]">
-        <div className="w-full max-w-[180px] m-auto footer-img">
+      <div className="w-full flex flex-col justify-center items-center py-[25px] bg-[#27413e] mb-2 rounded-[24px]">
+        <div className="w-full max-w-[180px] m-auto ">
           <img
             alt="logo"
-            src="/assets/images/logo.png"
+            src="/assets/images/brandLogo-white.png"
             height={55}
             width={160}
             className="object-cover object-center m-auto"
